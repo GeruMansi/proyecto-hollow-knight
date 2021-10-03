@@ -240,7 +240,8 @@ footer {
     padding: 0;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center; }
+    justify-content: center;
+    align-items: center; }
     footer ul li {
       font-family: serif;
       list-style: none;
@@ -327,4 +328,7 @@ footer {
     width: 50%;
     margin: auto; }
   .flor-divisora img {
-    width: 600px; } }
+    width: 600px; }
+  footer {
+    font-size: 1.5em;
+    padding-bottom: 30px; } }
