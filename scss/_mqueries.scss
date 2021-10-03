@@ -1,0 +1,128 @@
+@media only screen and (min-width: 767px)
+{
+    body {
+        background: rgb(0,0,0);
+        background: linear-gradient(to bottom, #000000 10%, #131313 50%, #000000 95%);
+    }
+    header {
+        height: 150px;
+        background-image: url(../source/img/f316931b-ee90-48fe-8bf5-17845086f0e3-profile_banner-480.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+
+        nav {
+            ul {
+                height: 150px;
+                flex-flow: row nowrap;
+                justify-content: flex-end;
+                align-items: flex-end;
+                position: absolute;
+                bottom: 5px;
+                right: 5px;
+                font-size: 1.075em;
+
+                li {
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+
+                li:hover {
+                    ul {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+    main {
+        h1 {
+            font-size: 3em;
+            margin-top: 0;
+        }
+        p {
+            font-size: 1.2em;
+        }
+        section {
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+    }
+    .elemento-actualizacion {
+        h2 {
+            font-size: 1.7em;
+        }
+        .h6 {
+            font-size: 1.5em;
+        }
+        div {
+            width: 75%;
+            margin: auto;
+        }
+    }
+    #silksong {
+        div {
+            width: 75%;
+            margin-bottom: 25px;
+        }
+    }
+    #newsletter {
+        width: 50%;
+        margin: auto;
+    }
+    form {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 1200px)
+{
+    main {
+        h1 {
+            font-size: 4em;
+        }
+    }
+    .elemento-actualizacion {
+        #godmaster-sample {
+            width: 50vw;
+            margin: auto;
+        }
+        #lifeblood-sample {
+            width: 50vw;
+            margin: auto;
+        }
+        #grimm-troupe-sample {
+            width: 50vw;
+            margin: auto;
+        }
+        #hidden-dreams-sample {
+            width: 50vw;
+            margin: auto;
+        }
+    }
+    #carousel {
+        width: 70%;
+        margin: auto;
+    }
+    .tc-crew {
+        width: 75%;
+    }
+    #tc-crew-reverse {
+        width: 75%;
+    }
+    #silksong {
+        width: 50vw;
+        margin: auto;
+    }
+    form {
+        width: 50%;
+        margin: auto;
+    }
+    .flor-divisora {
+        img {
+            width: 600px;
+        }
+    }
+}

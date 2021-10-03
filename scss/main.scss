@@ -1,0 +1,35 @@
+body {
+    background: rgb(21,21,21);
+    background: linear-gradient(rgba(20,20,20,1) 0%, rgba(10,10,10,1) 80%, rgba(0,0,0,1) 100%);
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 1fr 40px;
+    grid-template-areas:
+        'header'
+        'main'
+        'footer';
+}
+
+/* Imagen de división */
+.flor-divisora {
+    img {
+        width: 300px;
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+// Header
+@import 'header';
+
+// Main
+@import 'sections';
+
+// Footer
+@import 'footer';
+
+// Media queries
+@import 'mqueries'

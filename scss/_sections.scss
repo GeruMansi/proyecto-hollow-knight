@@ -1,0 +1,251 @@
+$main-color-white: whitesmoke;
+$main-color-blue: lightskyblue;
+$main-color-grey: #313131;
+$main-font1: 'Cinzel', serif;
+$main-font2: 'Open Sans', sans-serif;
+
+main {
+    color: $main-color-white;
+
+    grid-area: main;
+
+    h1 {
+        margin-top: 40px;
+        font-family: $main-font1;
+        font-weight: 300;
+        font-size: 1.5em;
+        text-align: center;
+    }
+    p {
+        font-family: $main-font2;
+        font-size: 0.85em;
+        text-align: justify;
+    }
+    h2 {
+        font-size: 1em;
+        font-family: $main-font2;
+        color: $main-color-blue;
+    }
+    h3 {
+        text-align: center;
+        font-family: $main-font2;
+    }
+    #descripcion-juego {
+        width: 95%;
+        margin: auto;
+
+        video {
+            width: 90%;
+            display: block;
+            margin: auto;
+        }
+    }
+    #mas-info {
+        width: 95%;
+        margin: auto;
+    }
+    #caracteristicas-juego {
+        width: 95%;
+        margin: auto;
+
+        ul {
+            list-style-type: circle;
+
+            li {
+                font-family: $main-font2;
+                margin: 5px 0;
+            }
+        }
+    }
+    .elemento-actualizacion {
+        width: 90%;
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 20px;
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-family: 'Cinzel', serif;
+        }
+
+        div {
+            width: 90%;
+            margin: auto;
+        }
+
+        img {
+            display: block;
+            margin: auto;
+        }
+    }
+    #tc-section {
+        margin-top: 20px;
+    }
+    #silksong {
+        text-align: center;
+        margin-top: 20px;
+
+        div {
+            width: 90%;
+            margin: auto;
+        }
+    }
+    #hidden-dreams {
+        margin-bottom: 20px;
+    }
+    #newsletter {
+        width: 90vw;
+        margin-top: 20px;
+        margin-bottom: 50px;
+
+        h5 {
+            color: $main-color-blue;
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+            font-size: 1em;
+        }
+    }
+    #carousel {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+#submit-btn {
+    border: grove 2px $main-color-grey;
+}
+
+// Tablas - Personajes y amuletos
+#tabla {
+    width: 90%;
+    margin: 50px auto;
+    border: groove 2px $main-color-grey;
+
+    display: flex;
+    flex-flow: column nowrap;
+
+    .grid-row-head {
+        width: 100%;
+        font-size: 1.2em;
+
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: center;
+
+        p {
+            margin: 10px 0;
+            font-family: $main-font1;
+            color: grey;
+        }
+
+        div {
+            border: groove 3px $main-color-grey;
+            height: 100%;
+        }
+    }
+
+    .grid-row {
+        width: 100%;
+        height: 200px;
+
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: center;
+
+        div {
+            border: groove 3px $main-color-grey;
+            height: 100%;
+        }        
+    }
+
+    .grid-row-charm {
+        width: 100%;
+        height: 130px;
+
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: center;
+
+        div {
+            border: groove 3px $main-color-grey;
+            height: 100%;
+        }
+
+        .columna-nombre {
+            p {
+                margin: 5px 0 10px 0;
+                font-family: $main-font2;
+                color: $main-color-blue;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.columna-nombre {
+    margin: 0;
+    width: 20%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    p {
+        margin: 5px 0 10px 0;
+        font-family: $main-font1;
+        color: $main-color-blue;
+    }
+}
+
+.columna-descrip {
+    margin: 0;
+    width: 80%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+        width: 85%;
+        text-align: center;
+    }
+}
+
+// Team Cherry
+#texto-tc {
+    width: 85%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.tc-crew {
+    width: 90%;
+    margin: auto;
+
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+#tc-crew-reverse {
+    width: 90%;
+    margin: auto;
+
+    display: flex;
+    flex-flow: row-reverse nowrap;
+}
+
+.tc-desc {
+    text-align: justify;
+    width: 90%;
+    margin-left: 1em;
+}
