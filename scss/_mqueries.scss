@@ -118,6 +118,17 @@
         }
     }
     .elemento-actualizacion {
+        max-width: 800px;
+        margin: auto;
+        text-align: center;
+
+        h2 {
+            font-size: 2em;
+        }
+        p {
+            text-align: center;
+        }
+        
         #godmaster-sample {
             width: 50vw;
             margin: auto;

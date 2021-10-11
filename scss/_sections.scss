@@ -4,6 +4,11 @@ $main-color-grey: #313131;
 $main-font1: 'Cinzel', serif;
 $main-font2: 'Open Sans', sans-serif;
 
+@mixin w90-mauto {
+    width: 90%;
+    margin: auto;
+}
+
 main {
     color: $main-color-white;
 
@@ -31,22 +36,18 @@ main {
         font-family: $main-font2;
     }
     #descripcion-juego {
-        width: 95%;
-        margin: auto;
+        @include w90-mauto();
 
         video {
-            width: 90%;
+            @include w90-mauto();
             display: block;
-            margin: auto;
         }
     }
     #mas-info {
-        width: 95%;
-        margin: auto;
+        @include w90-mauto();
     }
     #caracteristicas-juego {
-        width: 95%;
-        margin: auto;
+        @include w90-mauto();
 
         ul {
             list-style-type: circle;
@@ -57,9 +58,15 @@ main {
             }
         }
     }
+    #subtitle-actualizaciones {
+        @include w90-mauto();
+
+        p {
+            text-align: center;
+        }
+    }
     .elemento-actualizacion {
-        width: 90%;
-        margin: auto;
+        @include w90-mauto();
         margin-top: 30px;
         margin-bottom: 20px;
 
@@ -72,8 +79,7 @@ main {
         }
 
         div {
-            width: 90%;
-            margin: auto;
+            @include w90-mauto();
         }
 
         img {
@@ -86,11 +92,16 @@ main {
     }
     #silksong {
         text-align: center;
-        margin-top: 20px;
+        margin-top: 50px;
+        margin-bottom: 20px;
+
+        h2 {
+            font-family: $main-font1;
+        }
 
         div {
-            width: 90%;
-            margin: auto;
+            @include w90-mauto();
+            margin-top: 20px;
         }
     }
     #hidden-dreams {
@@ -112,8 +123,7 @@ main {
         }
     }
     #carousel {
-        width: 90%;
-        margin: auto;
+        @include w90-mauto();
     }
 }
 
@@ -231,16 +241,14 @@ main {
 }
 
 .tc-crew {
-    width: 90%;
-    margin: auto;
+    @include w90-mauto();
 
     display: flex;
     flex-flow: row nowrap;
 }
 
 #tc-crew-reverse {
-    width: 90%;
-    margin: auto;
+    @include w90-mauto();
 
     display: flex;
     flex-flow: row-reverse nowrap;

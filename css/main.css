@@ -84,23 +84,28 @@ main {
     text-align: center;
     font-family: "Open Sans", sans-serif; }
   main #descripcion-juego {
-    width: 95%;
+    width: 90%;
     margin: auto; }
     main #descripcion-juego video {
       width: 90%;
-      display: block;
-      margin: auto; }
+      margin: auto;
+      display: block; }
   main #mas-info {
-    width: 95%;
+    width: 90%;
     margin: auto; }
   main #caracteristicas-juego {
-    width: 95%;
+    width: 90%;
     margin: auto; }
     main #caracteristicas-juego ul {
       list-style-type: circle; }
       main #caracteristicas-juego ul li {
         font-family: "Open Sans", sans-serif;
         margin: 5px 0; }
+  main #subtitle-actualizaciones {
+    width: 90%;
+    margin: auto; }
+    main #subtitle-actualizaciones p {
+      text-align: center; }
   main .elemento-actualizacion {
     width: 90%;
     margin: auto;
@@ -120,10 +125,14 @@ main {
     margin-top: 20px; }
   main #silksong {
     text-align: center;
-    margin-top: 20px; }
+    margin-top: 50px;
+    margin-bottom: 20px; }
+    main #silksong h2 {
+      font-family: "Cinzel", serif; }
     main #silksong div {
       width: 90%;
-      margin: auto; }
+      margin: auto;
+      margin-top: 20px; }
   main #hidden-dreams {
     margin-bottom: 20px; }
   main #newsletter {
@@ -329,18 +338,26 @@ footer {
 @media only screen and (min-width: 1200px) {
   main h1 {
     font-size: 4em; }
-  .elemento-actualizacion #godmaster-sample {
-    width: 50vw;
-    margin: auto; }
-  .elemento-actualizacion #lifeblood-sample {
-    width: 50vw;
-    margin: auto; }
-  .elemento-actualizacion #grimm-troupe-sample {
-    width: 50vw;
-    margin: auto; }
-  .elemento-actualizacion #hidden-dreams-sample {
-    width: 50vw;
-    margin: auto; }
+  .elemento-actualizacion {
+    max-width: 800px;
+    margin: auto;
+    text-align: center; }
+    .elemento-actualizacion h2 {
+      font-size: 2em; }
+    .elemento-actualizacion p {
+      text-align: center; }
+    .elemento-actualizacion #godmaster-sample {
+      width: 50vw;
+      margin: auto; }
+    .elemento-actualizacion #lifeblood-sample {
+      width: 50vw;
+      margin: auto; }
+    .elemento-actualizacion #grimm-troupe-sample {
+      width: 50vw;
+      margin: auto; }
+    .elemento-actualizacion #hidden-dreams-sample {
+      width: 50vw;
+      margin: auto; }
   .tabla {
     width: 70vw; }
   .tc-crew {
