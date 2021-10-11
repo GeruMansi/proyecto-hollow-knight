@@ -122,7 +122,7 @@ main {
 }
 
 // Tablas - Personajes y amuletos
-#tabla {
+.tabla {
     width: 90%;
     margin: 50px auto;
     border: groove 2px $main-color-grey;
@@ -134,7 +134,7 @@ main {
         width: 100%;
         font-size: 1.2em;
 
-        display: flex;
+        display: none;
         flex-flow: row nowrap;
         align-items: center;
         justify-content: center;
@@ -153,47 +153,49 @@ main {
 
     .grid-row {
         width: 100%;
-        height: 200px;
+        border: groove 2px $main-color-grey;
 
         display: flex;
-        flex-flow: row nowrap;
+        flex-flow: column nowrap;
         align-items: center;
         justify-content: center;
 
         div {
-            border: groove 3px $main-color-grey;
             height: 100%;
-        }        
+        }
     }
 
     .grid-row-charm {
         width: 100%;
-        height: 130px;
+        border: groove 3px $main-color-grey;
+        padding-top: 10px;
 
         display: flex;
         flex-flow: row nowrap;
         align-items: center;
         justify-content: center;
 
-        div {
-            border: groove 3px $main-color-grey;
-            height: 100%;
-        }
-
         .columna-nombre {
+            width: 40%;
+
             p {
-                margin: 5px 0 10px 0;
+                margin: 10px 0 10px 0;
                 font-family: $main-font2;
                 color: $main-color-blue;
                 text-align: center;
             }
+        }
+
+        .columna-descrip {
+            width: 60%;
+            min-height: 100%;
         }
     }
 }
 
 .columna-nombre {
     margin: 0;
-    width: 20%;
+    width: 100%;
 
     display: flex;
     flex-flow: column nowrap;
@@ -209,7 +211,7 @@ main {
 
 .columna-descrip {
     margin: 0;
-    width: 80%;
+    width: 100%;
 
     display: flex;
     justify-content: center;

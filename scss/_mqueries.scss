@@ -75,6 +75,39 @@
         width: 80%;
         margin: auto;
     }
+    .tabla {
+        .grid-row-head {
+            display: flex;
+        }
+        .grid-row {
+            height: 250px;
+            border: none;
+    
+            flex-flow: row nowrap;
+        }
+        .columna-nombre {
+            width: 30%;
+            border: groove 3px $main-color-grey;
+        }
+        .columna-descrip {
+            width: 70%;
+            border: groove 3px $main-color-grey;
+        }
+        .grid-row-charm {
+            height: 150px;
+            padding: 0;
+            border: none;
+
+            .columna-nombre {
+                width: 30%;
+                height: 100%;
+            }
+            .columna-descrip {
+                width: 70%;
+                height: 100%;
+            }
+        }
+    }
 }
 
 @media only screen and (min-width: 1200px)
@@ -101,6 +134,9 @@
             width: 50vw;
             margin: auto;
         }
+    }
+    .tabla {
+        width: 70vw;
     }
     .tc-crew {
         width: 75%;
